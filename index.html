@@ -3,48 +3,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio</title>
+    <title>Esteban - Portfolio</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
             background: #0d1117;
             color: #c9d1d9;
-            margin: 0;
-            padding: 20px;
+            line-height: 1.6;
         }
-        h1 {
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #21262d;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #58a6ff, #1f6feb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #fff;
+            border: 3px solid #21262d;
+        }
+        
+        .header-info h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #c9d1d9;
+        }
+        
+        .header-info p {
+            font-size: 1.2em;
+            color: #8b949e;
+            margin-bottom: 15px;
+        }
+        
+        .stats {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            background: #161b22;
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: 1px solid #21262d;
+            font-size: 0.9em;
+        }
+        
+        .stat-item strong {
             color: #58a6ff;
         }
+        
         .section {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
-        a {
+        
+        .section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #c9d1d9;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: #58a6ff;
+            border-radius: 2px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-card {
+            background: #161b22;
+            border: 1px solid #21262d;
+            border-radius: 6px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            border-color: #58a6ff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(88, 166, 255, 0.1);
+        }
+        
+        .project-card h3 {
             color: #58a6ff;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .project-card p {
+            color: #8b949e;
+            margin-bottom: 15px;
+        }
+        
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: #1f6feb;
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.85em;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-item {
+            background: #161b22;
+            border: 1px solid #21262d;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .skill-item:hover {
+            border-color: #58a6ff;
+            background: #1c2128;
+        }
+        
+        .skill-item strong {
+            color: #58a6ff;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .contact-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-btn {
+            background: #21262d;
+            color: #c9d1d9;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            border: 1px solid #30363d;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .contact-btn:hover {
+            background: #30363d;
+            border-color: #58a6ff;
+            color: #58a6ff;
+        }
+        
+        .readme-section {
+            background: #161b22;
+            border: 1px solid #21262d;
+            border-radius: 6px;
+            padding: 30px;
+        }
+        
+        .readme-section h3 {
+            color: #58a6ff;
+            margin-bottom: 15px;
+        }
+        
+        .readme-section ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        
+        .readme-section li {
+            margin-bottom: 8px;
+            color: #8b949e;
+        }
+        
+        .readme-section li::before {
+            content: '▹';
+            color: #58a6ff;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #21262d;
+            color: #8b949e;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-info h1 {
+                font-size: 2em;
+            }
+            
+            .stats {
+                justify-content: center;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Hola, soy Esteban 👋</h1>
-    <p>Programador enfocado en domótica, seguridad, Python, Arduino y proyectos de automatización.</p>
+    <div class="container">
+        <header>
+            <div class="avatar">E</div>
+            <div class="header-info">
+                <h1>Esteban</h1>
+                <p>Programador especializado en Domótica, Seguridad y Automatización</p>
+                <div class="stats">
+                    <div class="stat-item">📍 <strong>Rafaela, Argentina</strong></div>
+                    <div class="stat-item">🔧 <strong>IoT Developer</strong></div>
+                    <div class="stat-item">🐍 <strong>Python</strong></div>
+                </div>
+            </div>
+        </header>
 
-    <div class="section">
-        <h2>Proyectos</h2>
-        <ul>
-            <li><a href="#">Proyecto 1</a> – Descripción breve del proyecto.</li>
-            <li><a href="#">Proyecto 2</a> – Descripción breve del proyecto.</li>
-            <li><a href="#">Proyecto 3</a> – Descripción breve del proyecto.</li>
-        </ul>
-    </div>
+        <section class="section">
+            <div class="readme-section">
+                <h3>👋 Sobre mí</h3>
+                <p>Desarrollador apasionado por la tecnología IoT, la automatización del hogar y la seguridad. Me especializo en crear soluciones inteligentes que mejoran la vida diaria mediante la integración de hardware y software.</p>
+                <br>
+                <ul>
+                    <li>🏠 Especialista en sistemas de domótica y automatización</li>
+                    <li>🔒 Enfocado en seguridad y protección de sistemas embebidos</li>
+                    <li>⚡ Experiencia con microcontroladores Arduino y ESP32</li>
+                    <li>🌐 Desarrollo de APIs y aplicaciones web para control remoto</li>
+                    <li>📊 Integración con bases de datos y análisis de datos</li>
+                </ul>
+            </div>
+        </section>
 
-    <div class="section">
-        <h2>Habilidades</h2>
-        <p>Python, C, Arduino, ESP32, Web, Bases de datos, APIs…</p>
-    </div>
+        <section class="section">
+            <h2>🚀 Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>🏡 Sistema Domótico Inteligente</h3>
+                    <p>Sistema completo de automatización del hogar con control de iluminación, temperatura y seguridad mediante ESP32.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">ESP32</span>
+                        <span class="tag">MQTT</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>🔐 Sistema de Seguridad IoT</h3>
+                    <p>Plataforma de monitoreo con cámaras, sensores de movimiento y alertas en tiempo real con almacenamiento en la nube.</p>
+                    <div class="project-tags">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">API REST</span>
+                        <span class="tag">WebSocket</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>🌡️ Estación Meteorológica DIY</h3>
+                    <p>Estación meteorológica con sensores DHT22 y BMP280, dashboard web para visualización de datos históricos.</p>
+                    <div class="project-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">SQLite</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="section">
-        <h2>Contacto</h2>
-        <p>Email: tuemail@example.com</p>
-        <p>GitHub: <a href="https://github.com/tuusuario">github.com/tuusuario</a></p>
+        <section class="section">
+            <h2>💻 Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <strong>Lenguajes</strong>
+                    <p>Python, C/C++</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Hardware</strong>
+                    <p>Arduino, ESP32</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Protocolos</strong>
+                    <p>MQTT, HTTP, I2C</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Web</strong>
+                    <p>HTML, CSS, Flask</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Bases de Datos</strong>
+                    <p>SQLite, MySQL</p>
+                </div>
+                <div class="skill-item">
+                    <strong>APIs</strong>
+                    <p>REST, WebSocket</p>
+                </div>
+                <div class="skill-item">
+                    <strong>IoT</strong>
+                    <p>Domótica, Sensores</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Seguridad</strong>
+                    <p>Encriptación, Auth</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📫 Contacto</h2>
+            <div class="contact-links">
+                <a href="mailto:tuemail@example.com" class="contact-btn">
+                    📧 Email
+                </a>
+                <a href="https://github.com/tuusuario" class="contact-btn" target="_blank">
+                    🐙 GitHub
+                </a>
+                <a href="https://linkedin.com/in/tuusuario" class="contact-btn" target="_blank">
+                    💼 LinkedIn
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>⭐ Si te gusta mi trabajo, no dudes en dar una estrella a mis repositorios</p>
+            <p>© 2024 Esteban - Portfolio de Desarrollo IoT</p>
+        </footer>
     </div>
 </body>
 </html>
