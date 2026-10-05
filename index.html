@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Esteban Bertoni, desarrollador IoT y de sistemas embebidos: ESP32, sensores, MQTT, Python, SQL y Machine Learning.">
+    <meta name="theme-color" content="#080b10">
+    <meta name="color-scheme" content="dark">
+
+    <!-- Open Graph: vista previa al compartir en redes / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Esteban Bertoni | IoT & Embedded Systems Developer">
+    <meta property="og:description" content="Desarrollo sistemas que integran hardware, software, comunicaciones y datos para crear soluciones inteligentes.">
+    <meta property="og:image" content="assets/img/esteban.jpg">
+    <meta property="og:url" content="https://estebanbertoni.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Esteban Bertoni | IoT & Embedded Systems Developer</title>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23080b10'/><text x='16' y='22' font-family='monospace' font-size='15' font-weight='bold' fill='%2358a6ff' text-anchor='middle'>EB</text></svg>">
+
+    <script>
+        document.documentElement.classList.add('js');
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <header class="site-header">
+
+        <!-- Navegación principal -->
+        <nav class="navbar" aria-label="Navegación principal">
+
+            <div class="nav-container">
+
+                <a href="#home" class="logo">
+                    EB<span>.</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li>
+                        <a href="#about">Sobre mí</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">Proyectos</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills">Habilidades</a>
+                    </li>
+
+                    <li>
+                        <a href="#interests">Intereses</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contacto</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    
+    <main>
+
+        
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <span class="status">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    DISPONIBLE PARA PROYECTOS
+                </span>
+
+                <h1>
+                    Esteban Bertoni
+                </h1>
+
+                <h2>
+                    IoT & Embedded Systems Developer
+                </h2>
+
+                <p class="hero-description">
+                    Desarrollo sistemas que integran hardware, software,
+                    comunicaciones y datos para crear soluciones inteligentes.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn btn-primary">
+                        Ver proyectos
+                    </a>
+
+                    <a
+                        href="https://github.com/EstebanBertoni/estacion_meteorologica"
+                        class="btn btn-secondary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+            
+            <aside class="system-panel">
+
+                <div class="panel-header">
+                    <span>SYSTEM STATUS</span>
+                    <span class="online">ONLINE</span>
+                </div>
+
+                <div class="system-data">
+
+                    <div class="system-item">
+                        <span>HARDWARE</span>
+                        <strong>ESP32</strong>
+                    </div>
+
+                    <div class="system-item">
+                        <span>PROTOCOL</span>
+                        <strong>MQTT / HTTP</strong>
+                    </div>
+
+                    <div class="system-item">
+                        <span>BACKEND</span>
+                        <strong>PYTHON</strong>
+                    </div>
+
+                    <div class="system-item">
+                        <span>DATABASE</span>
+                        <strong>SQL</strong>
+                    </div>
+
+                    <div class="system-item">
+                        <span>ML</span>
+                        <strong>XGBOOST</strong>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+        <!-- =========================
+             SOBRE MÍ
+        ========================== -->
+        <section id="about" class="section about-section">
+
+            <div class="section-heading" data-animate>
+                <span class="section-number">01</span>
+
+                <div>
+                    <p class="section-label">
+                        PERFIL
+                    </p>
+
+                    <h2>
+                        Sobre mí
+                    </h2>
+                </div>
+            </div>
+
+
+            <div class="about-grid">
+
+                <!-- Imagen -->
+                <div class="about-image" data-animate>
+
+                    <img
+                        src="assets/img/esteban.jpg"
+                        alt="Esteban Bertoni"
+                        class="profile-image"
+                        width="400"
+                        height="400"
+                        decoding="async"
+                    >
+
+                </div>
+
+
+                <!-- Información -->
+                <article class="about-content" data-animate>
+
+                    <h3>
+                        Hardware + Software + Datos
+                    </h3>
+
+                    <p>
+                        Me interesa el desarrollo de sistemas tecnológicos
+                        donde diferentes componentes trabajan en conjunto:
+                        dispositivos físicos, software, comunicaciones,
+                        bases de datos y procesamiento de información.
+                    </p>
+
+                    <p>
+                        Mi formación y proyectos están orientados principalmente
+                        al desarrollo de soluciones IoT, sistemas embebidos,
+                        automatización y aplicaciones conectadas.
+                    </p>
+
+                    <div class="about-columns">
+
+                        <div>
+                            <h4>Hardware</h4>
+                            <p>
+                                ESP32, Arduino y sensores.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4>Comunicación</h4>
+                            <p>
+                                MQTT, HTTP, I2C y APIs.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4>Software</h4>
+                            <p>
+                                Python, C/C++, HTML y CSS.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4>Datos</h4>
+                            <p>
+                                SQL, análisis de datos e IA.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROYECTOS
+        ========================== -->
+        <section id="projects" class="section projects-section">
+
+            <div class="section-heading" data-animate>
+                <span class="section-number">02</span>
+
+                <div>
+                    <p class="section-label">
+                        DESARROLLO
+                    </p>
+
+                    <h2>
+                        Proyectos
+                    </h2>
+                </div>
+            </div>
+
+
+            <!-- Proyecto destacado -->
+            <article class="featured-project" data-animate>
+
+                <div class="project-image">
+
+                    <img
+                        src="assets/img/meteorologica.jpg"
+                        alt="Estación meteorológica IoT desarrollada con ESP32"
+                        width="800"
+                        height="500"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <span class="project-type">
+                        PROYECTO DESTACADO
+                    </span>
+
+                    <h3>
+                        Estación Meteorológica IoT
+                    </h3>
+
+                    <p>
+                        Estación meteorológica de bajo costo capaz de
+                        recopilar variables ambientales, almacenar información
+                        localmente, transmitir datos y utilizar modelos de
+                        aprendizaje automático para realizar predicciones
+                        microclimáticas.
+                    </p>
+
+
+                    <!-- Arquitectura -->
+                    <div class="architecture">
+
+                        <span>ESP32</span>
+                        <span class="arch-arrow" aria-hidden="true">→</span>
+                        <span>SENSORES</span>
+                        <span class="arch-arrow" aria-hidden="true">→</span>
+                        <span>MQTT</span>
+                        <span class="arch-arrow" aria-hidden="true">→</span>
+                        <span>PYTHON</span>
+                        <span class="arch-arrow" aria-hidden="true">→</span>
+                        <span>SQL</span>
+                        <span class="arch-arrow" aria-hidden="true">→</span>
+                        <span>IA</span>
+
+                    </div>
+
+
+                    <!-- Tecnologías -->
+                    <div class="tags">
+
+                        <span>ESP32</span>
+                        <span>BME280</span>
+                        <span>MQTT</span>
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>XGBoost</span>
+                        <span>SQL</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Otros proyectos -->
+            <div class="projects-grid" data-animate-group>
+
+                <!-- Domótica -->
+                <article class="project-card" data-animate>
+
+                    <div class="project-card-image">
+
+                        <img
+                            src="assets/img/domotica.jpg"
+                            alt="Sistema domótico inteligente basado en ESP32"
+                            width="600"
+                            height="400"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                    <div class="project-card-content">
+
+                        <span class="project-type">
+                            IoT / AUTOMATIZACIÓN
+                        </span>
+
+                        <h3>
+                            Sistema Domótico Inteligente
+                        </h3>
+
+                        <p>
+                            Sistema orientado al control y automatización
+                            de dispositivos mediante microcontroladores,
+                            sensores y una interfaz de control.
+                        </p>
+
+                        <div class="tags">
+
+                            <span>ESP32</span>
+                            <span>Arduino</span>
+                            <span>MQTT</span>
+                            <span>HTTP</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Seguridad -->
+                <article class="project-card" data-animate>
+
+                    <div class="project-card-image">
+
+                        <img
+                            src="assets/img/seguridad-iot.jpg"
+                            alt="Sistema de seguridad IoT basado en sensores"
+                            width="600"
+                            height="400"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                    <div class="project-card-content">
+
+                        <span class="project-type">
+                            IoT / SEGURIDAD
+                        </span>
+
+                        <h3>
+                            Sistema de Seguridad IoT
+                        </h3>
+
+                        <p>
+                            Sistema basado en sensores y dispositivos
+                            conectados para detectar eventos y permitir
+                            la supervisión de un entorno.
+                        </p>
+
+                        <div class="tags">
+
+                            <span>ESP32</span>
+                            <span>Sensores</span>
+                            <span>IoT</span>
+                            <span>Web</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HABILIDADES
+        ========================== -->
+        <section id="skills" class="section skills-section">
+
+            <div class="section-heading" data-animate>
+
+                <span class="section-number">03</span>
+
+                <div>
+                    <p class="section-label">
+                        TECNOLOGÍAS
+                    </p>
+
+                    <h2>
+                        Habilidades
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="skills-grid" data-animate-group>
+
+                <!-- Programación -->
+                <article class="skill-category" data-animate>
+
+                    <h3>
+                        Programación
+                    </h3>
+
+                    <ul>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+
+                </article>
+
+
+                <!-- Embedded -->
+                <article class="skill-category" data-animate>
+
+                    <h3>
+                        Embedded & IoT
+                    </h3>
+
+                    <ul>
+                        <li>ESP32</li>
+                        <li>Arduino</li>
+                        <li>MQTT</li>
+                        <li>HTTP</li>
+                        <li>I2C</li>
+                    </ul>
+
+                </article>
+
+
+                <!-- Datos -->
+                <article class="skill-category" data-animate>
+
+                    <h3>
+                        Datos
+                    </h3>
+
+                    <ul>
+                        <li>SQLite</li>
+                        <li>MySQL</li>
+                        <li>Pandas</li>
+                        <li>Análisis de datos</li>
+                        <li>Machine Learning</li>
+                    </ul>
+
+                </article>
+
+
+                <!-- Desarrollo -->
+                <article class="skill-category" data-animate>
+
+                    <h3>
+                        Desarrollo Web
+                    </h3>
+
+                    <ul>
+                        <li>APIs REST</li>
+                        <li>WebSocket</li>
+                        <li>Flask</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INTERESES
+        ========================== -->
+        <section id="interests" class="section interests-section">
+
+            <div class="section-heading" data-animate>
+
+                <span class="section-number">04</span>
+
+                <div>
+                    <p class="section-label">
+                        ÁREAS
+                    </p>
+
+                    <h2>
+                        Áreas de interés
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="interests-grid" data-animate-group>
+
+                <article class="interest-card" data-animate>
+
+                    <span class="interest-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Internet of Things
+                    </h3>
+
+                    <p>
+                        Dispositivos conectados, sensores,
+                        telemetría y automatización.
+                    </p>
+
+                </article>
+
+
+                <article class="interest-card" data-animate>
+
+                    <span class="interest-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Sistemas Embebidos
+                    </h3>
+
+                    <p>
+                        Desarrollo de sistemas basados en
+                        microcontroladores y electrónica.
+                    </p>
+
+                </article>
+
+
+                <article class="interest-card" data-animate>
+
+                    <span class="interest-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Automatización
+                    </h3>
+
+                    <p>
+                        Integración de sensores, actuadores,
+                        software y sistemas de control.
+                    </p>
+
+                </article>
+
+
+                <article class="interest-card" data-animate>
+
+                    <span class="interest-number">
+                        04
+                    </span>
+
+                    <h3>
+                        Datos e Inteligencia Artificial
+                    </h3>
+
+                    <p>
+                        Procesamiento de datos y utilización
+                        de modelos predictivos.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACTO
+        ========================== -->
+        <section id="contact" class="section contact-section">
+
+            <div class="section-heading" data-animate>
+
+                <span class="section-number">05</span>
+
+                <div>
+                    <p class="section-label">
+                        COMUNICACIÓN
+                    </p>
+
+                    <h2>
+                        Contacto
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <!-- Información de contacto -->
+                <article class="contact-info" data-animate>
+
+                    <h3>
+                        ¿Trabajamos juntos?
+                    </h3>
+
+                    <p>
+                        Si querés conocer más sobre mis proyectos,
+                        tecnologías o desarrollo, podés contactarme
+                        mediante cualquiera de estos medios.
+                    </p>
+
+
+                    <div class="contact-links">
+
+                        <a href="mailto:bertoniesteban@gmail.com">
+                            Email
+                        </a>
+
+                        <a
+                            href="https://github.com/estebanbertoni"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/esteban-bertoni-b68292240/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Formulario -->
+                <article class="contact-form-container" data-animate>
+
+                    <form
+                        class="contact-form"
+                        id="contact-form"
+                        action="https://formsubmit.co/bertoniesteban@gmail.com"
+                        method="post"
+                    >
+
+                        <!-- Honeypot anti-spam: los bots lo rellenan, los humanos no lo ven -->
+                        <input
+                            type="text"
+                            name="_honey"
+                            class="honeypot"
+                            tabindex="-1"
+                            autocomplete="off"
+                        >
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Nombre
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Tu nombre"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="tu@email.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Mensaje
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Escribí tu mensaje..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <p class="form-status" role="status" aria-live="polite" hidden></p>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Enviar mensaje
+                        </button>
+
+                    </form>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <p>
+                © 2026 Esteban Bertoni
+            </p>
+
+            <p>
+                IoT & Embedded Systems Developer
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js" defer></script>
+
+</body>
+
+</html>
